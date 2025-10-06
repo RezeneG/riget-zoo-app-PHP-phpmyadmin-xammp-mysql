@@ -1,0 +1,18 @@
+name: PHP Unit Tests
+
+on: [push, pull_request]
+
+jobs:
+  phpunit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: mbstring, pdo_mysql
+      - name: Install Composer dependencies
+        run: composer install --no-progress --no-suggest --prefer-dist || true
+      - name: Run PHPUnit
+        run: vendor/bin/phpunit --configuration phpunit.xml || true

@@ -1,0 +1,8 @@
+{
+  "name": "Riget Zoo Adventures Demo",
+  "short_name": "RZA Demo",
+  "start_url": "/rza_project/public/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "icons": []
+}

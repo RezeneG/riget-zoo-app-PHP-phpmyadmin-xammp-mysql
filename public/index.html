@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Riget Zoo Adventures - Demo</title>
+  <link rel="manifest" href="/rza_project/public/manifest.json">
+  <style>body{font-family:Arial,Helvetica,sans-serif;margin:20px}input,button{padding:8px;margin:4px} .card{border:1px solid #ddd;padding:12px;margin:12px 0;border-radius:6px}</style>
+</head>
+<body>
+  <h1>Riget Zoo Adventures — Demo</h1>
+  <div class="card">
+    <h2>Buy Zoo Tickets (demo)</h2>
+    <label>Date: <input type="date" id="ticket_date" value=""></label><br>
+    <label>Quantity: <input type="number" id="ticket_qty" value="2" min="1"></label><br>
+    <button id="buy_ticket">Buy Tickets</button>
+    <pre id="ticket_result"></pre>
+  </div>
+
+  <div class="card">
+    <h2>Book Hotel Room (demo)</h2>
+    <label>Room ID: <input type="number" id="room_id" value="1"></label><br>
+    <label>Start: <input type="date" id="start_date" value=""></label><br>
+    <label>End: <input type="date" id="end_date" value=""></label><br>
+    <button id="book_room">Book Room</button>
+    <pre id="hotel_result"></pre>
+  </div>
+
+<script src="booking.js"></script>
+</body>
+</html>
